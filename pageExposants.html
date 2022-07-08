@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./ressources/css/pageExposants.css">
+    <title>Amiens Métropole | Bourse High-Tech | Connexion</title>
+    <meta name="description" content="Participez à la bourse High-Tech Amiénoise
+    et profitez d'un matériel à un prix concurentiel.">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="index.html#pageTop">
+                    <img src="./ressources/images/logo.svg" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navbarText">
+                    <ul class="navbar-nav mb-2 mb-lg-0 text-center">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html#event">Evénement</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#products">Produits</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#subscription">Participez</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a class="nav-link" href="./pageExposants.html">Connexion</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav> 
+    </header>
+
+<!-- Subscription -->
+
+<section class="subFormSection">
+    <div class="container-fluid">
+        <div class="row">
+            <div class=" col-10 offset-1 col-lg-6 offset-lg-3 my-3">
+                <form action="post" class="subForm d-flex flex-column justify-content-around mt-3">
+                    <div class="d-flex flex-column flex-lg-row justify-content-center text-center text-lg-start mt-lg-4">
+                        <label for="name" class="text-uppercase text-light">nom :</label>
+                        <input type="text" id="name" placeholder="Nom" class="text-center">
+                    </div>
+                    <div class="d-flex flex-column flex-lg-row justify-content-center text-center text-lg-start">
+                        <label for="firstname" class="text-uppercase text-light">prénom :</label>
+                        <input type="text" id="firstname" placeholder="Prénom" class="text-center">
+                    </div>
+                    <div class="d-flex flex-column flex-lg-row justify-content-center text-center text-lg-start">
+                        <label for="age" class="text-uppercase text-light">âge :</label>
+                        <input type="number" id="age" placeholder="Âge" class="text-center">
+                    </div>
+                    <div class="d-flex flex-column flex-lg-row justify-content-center text-center text-lg-start">
+                        <label for="tel" class="text-uppercase text-light">téléphone :</label>
+                        <input type="tel" id="tel" placeholder="Téléphone" class="text-center">
+                    </div>
+                    <div class="d-flex flex-column flex-lg-row justify-content-center text-center text-lg-start">
+                        <label for="mail" class="text-uppercase text-light">e-mail :</label>
+                        <input type="email" id="mail" placeholder="E-mail" class="text-center">
+                    </div>
+                    <div class="d-flex flex-column flex-lg-row justify-content-center text-center text-lg-start">
+                        <label for="adress" class="text-uppercase text-light">adresse :</label>
+                        <input type="text" id="adress" placeholder="Adresse" class="text-center">
+                    </div>
+                    <div class="subFormButton text-center d-flex justify-content-around">
+                        <button disabled class="text-uppercase text-light py-2 my-3">envoyer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

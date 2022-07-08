@@ -1,0 +1,113 @@
+h1{
+    font-size: 4rem;
+}
+
+.navbar-brand{
+    width:20%;
+
+    
+}
+
+.navbar-collapse{
+    background-color:rgb(230,57,70) ;
+}
+
+.nav-link{
+    font-size: 1.3rem;
+}
+
+.logo{
+    
+    width: 50%;
+    height: 50%;
+}
+
+nav{
+    background-color:rgb(230,57,70);
+    height: 76px;
+}
+
+.link-secondary{
+    color:white;
+}
+
+
+
+/* ---------------------------- Variables couleurs ---------------------------- */
+
+:root {
+    --textColor: white;
+    --sectionOdd: #e63946;
+    --sectionEven: #1d3557;
+    --cardsColor: #457b9d;
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    
+}
+.row{
+    padding-top: 5%;
+
+}
+
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+
+
+.subForm {
+    height: 500px;
+    width: 100%;
+    background-color: var(--cardsColor);
+    border-radius: 15px;
+}
+
+.subForm > div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.subForm > div > label {
+    width: 30%;
+}
+
+.subForm > div > input {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+    font-size: small;
+    
+}
+
+.subFormButton {
+    width: 50%;
+}
+
+.subFormButton > button {
+    background-color: #e63946;
+    border: none;
+    border-radius: 15px;
+    transition: 0.5s;
+    width: 50%;
+}
+
+@media  screen and (min-width:990px) {
+    .subForm > div > input {
+        width: 40%;
+    }
+    .subFormButton > button {
+        width: 30%;
+        
+
+    }
+}

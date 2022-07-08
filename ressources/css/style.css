@@ -1,0 +1,284 @@
+/* ---------------------------- Variables couleurs ---------------------------- */
+
+:root {
+  --textColor: white;
+  --sectionOdd: #e63946;
+  --sectionEven: #1d3557;
+  --cardsColor: #457b9d;
+}
+
+/*  ---------------------------- CSS Global ---------------------------- */
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+/* début header */
+
+h1{
+  font-size: 4rem;
+}
+
+.navbar-brand{
+  width:20%;
+}
+
+.navbar-collapse{
+  background-color:rgb(230,57,70) ;
+}
+
+.nav-link{
+  font-size: 1.3rem;
+}
+
+.logo{
+  width: 50%;
+  height: 50%;
+}
+
+nav{
+  background-color:rgb(230,57,70);
+  height: 12%;
+}
+
+.link-secondary{
+  color:white;
+}
+
+header{
+  height: 100vh;
+}
+
+.heroBanner{
+  background-image: url(../images/herobanner.jpeg);
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  height: 88%;
+  color:white;
+}
+.heroBannerButton{
+  display: block;
+  line-height: 50px;
+  background-color:rgb(230,57,70);
+  border-radius: 20px;
+  text-align: center;
+  width: 200px;
+  text-decoration: none;
+  color:white;
+}
+
+/* fin header */
+
+/* début présentation */
+
+.imgPresentation > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.textPresentation > h2 {
+  width: 80%;
+}
+
+.textPresentation > p {
+  text-align: justify;
+}
+
+/* fin présentation */
+
+/* début produits */
+
+#products {
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: var(--sectionEven);
+}
+
+h5{
+  text-transform: uppercase;
+  margin: 5%;
+}
+
+.productsText{
+  padding-top: 5%;
+  
+}
+
+h2{
+  text-transform: uppercase;
+}
+
+.productsTextCard{
+  font-size: 20px;
+}
+
+.row{
+  justify-content: space-around;
+}
+
+.card{
+  width: 300px;
+  height: 450px;
+  background-color: var(--cardsColor);
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 5%;
+  
+}
+
+.cardImg{
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 5%; 
+}
+
+@media screen and  (max-width:992px){
+  .cardText{
+      display: none;
+  }
+
+  .card:hover .cardText{
+      display: block;
+  }
+  
+}
+
+@media screen and  (min-width:992px){
+  .cardImgPlus{
+      display: none;
+  }
+
+  .cardImgPlus:hover .cardImgPlus{
+      display: block;
+  }
+
+  
+}
+
+.imgRelative{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 80%;
+  margin: 5%;
+}
+
+.cardImgPlus{
+  position: absolute;
+  width: 70px;
+  height: 70px;
+}
+
+.plus-circle{
+  width: 70px;
+  height: 70px;
+}
+
+/* fin produits */
+
+/* début  formulaire */
+
+.map {
+  height: 450px;
+  width: 100%;
+}
+
+.map > iframe{
+  border-radius: 15px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.subForm {
+  height: 450px;
+  width: 100%;
+  background-color: var(--cardsColor);
+  border-radius: 15px;
+}
+
+.subForm > div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.subForm > div > label {
+  width: 25%;
+}
+
+.subForm > div > input {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  border: none;
+}
+
+.subFormButton {
+  width: 50%;
+}
+
+.subFormButton > button {
+  background-color: #e63946;
+  border: none;
+  border-radius: 15px;
+  transition: 0.5s;
+  width: 50%;
+}
+
+/* fin formulaire */
+
+/* début footer */
+
+footer {
+  background-color: var(--sectionOdd);
+}
+
+.footerLegal {
+  padding-bottom: 1rem;
+  font-size: x-small;
+  width: 90%;
+}
+
+.footerLegal > a {
+  width: 33%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: white
+}
+
+.socialLogo {
+  width: 70%;
+  margin: 1.5rem 0;
+}
+
+.socialLogo > a {
+  width: 33%;
+  margin: 0 2rem;
+}
+
+hr {
+  border: dotted black 2px;
+}
+
+.top {
+  margin: 2rem;
+}
